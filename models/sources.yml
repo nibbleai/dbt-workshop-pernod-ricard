@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Sources loaded by an external component
+    tables:
+      - name: coiffeurs
+        description: Hair salon with a pun in the name, in France.
+        columns:
+          - name: NAME
+            description: Name of the salon
+          - name: LAT
+            description: latitude
+          - name: LNG
+            description: longitude
+          - name: NUM
+            description: street number
+          - name: STREET
+            description: street details
+          - name: CITY
+            description: city of the salon
+          - name: POSTALCODE
+            description: postalcode in french format (5 numbers)
+          - name: ADDRESS
+            description: "complete address: num + street + city"
