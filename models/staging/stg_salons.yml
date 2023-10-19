@@ -6,3 +6,6 @@ models:
       - name: name
         tests:
           - not_null
+    tests:
+      - dbt_utils.fewer_rows_than:
+          compare_model: source('raw', 'coiffeurs')
